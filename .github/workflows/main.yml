@@ -3,7 +3,7 @@ name: Hello
 
 # On tells when the workflow should run, needs indentation
 on: 
-  workflow_dispatch
+  workflow_dispatch 
 
 # Jobs should be inside the workflow, tells what the workflow should do
 # Can be one or more than one jobs hence we use "jobs"
