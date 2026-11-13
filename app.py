@@ -1,6 +1,8 @@
 import os
 from flask import Flask, jsonify, request
 
+# Flask app
+
 app = Flask(__name__)
 # Load secret key from environment for security (never hardcode in production)
 app.secret_key = os.environ.get("SECRET_KEY", os.urandom(24))
