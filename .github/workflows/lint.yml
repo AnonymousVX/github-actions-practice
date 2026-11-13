@@ -1,0 +1,14 @@
+#goal for workflow: make linter check the syntax of code
+
+name: auto-linter
+on:
+  push:
+    paths: "*.py"
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    # this step will auto clone code of current branch into runner
+    steps:
+      - name: Checkout/Clone the code
+        uses: actions/checkout@v7
